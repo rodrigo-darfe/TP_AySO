@@ -1,0 +1,44 @@
+grep -i Home_url /etc/os-release 
+whoami
+cd /root/repogit/TP_AySO/
+echo Usuario=$(whoami) > datos_usuario.txt
+git add .
+git status
+git config --global user.email "rodrigo.ezequie.dc@gmail.com" git config --global user.name "rodrigo-darfe"
+git config --global user.email "rodrigo.ezequie.dc@gmail.com"
+git config --global user.name "rodrigo-darfe"
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+git status
+git push
+cd /proc
+cpuinfo
+nano cpuinfo
+head -27 cpuinfo >> /root/repogit/TP_AySO/datos_usuario.txt
+cd /root/repogit/TP_AySO
+cat datos_usuario.txt
+git add
+git add.
+git commit -m "feat: Anadiendo informacion de CPU"
+git add .
+git commit -m "feat: Anadiendo informacion de CPU"
+ls
+cat <<EOF >> README.md
+Alumno: Rodrigo  Division: 311 Turno: Noche  EOF 
+ls
+cat <<EOF >> README.md
+Alumno: Rodrigo
+cat <<EOF >> README.md
+Alumno: Rodrigo  Division: 311 Turno: Noche  EOF 
+ls
+cat <<EOF >> README.md
+Alumno: Rodrigo
+Division: 311
+Turno: Noche
+EOF
+
+git add README.md datos_usuarios.txt
+git add .
+git status
+git commit -m "Modificado Readme"
+git push
+history -a
